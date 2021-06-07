@@ -1,0 +1,11 @@
+name: LoginRewards
+version: 1.0
+main: xy.plugins.loginrewards.LoginRewards
+api-version: 1.16
+commands:
+  loginreward:
+    usage: /<command>
+    description: Opens the login rewards gui
+  loginreload:
+    usage: /<command>
+    description: Reloads the plugin

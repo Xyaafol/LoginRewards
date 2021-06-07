@@ -1,0 +1,253 @@
+#######################################################################################################
+# Version: 1.0.1                                                                                    #
+# By: Xyaafol                                                                                         #
+# Commands:                                                                                           #
+# /loginreward - Allows the player to open the login page to see how long until their next reward.    #
+# /loginreload - Reloads the plugin settings stored within this file. Requires OP.                    #
+#######################################################################################################
+
+#Title of the interface where players claim their rewards
+GUITitle: "Login Rewards"
+
+
+#Determines if the gui opens when the player logs on - set to 1 for on
+loginauto: 1
+
+#Alert shown to the player on log in if they have a reward to claim
+alert: "§7Hey you have a daily login reward to claim! Do /loginreward to claim it!"
+
+
+#Lore on the block that represents today, claimable is shown if they haven't claimed it today - claimed is shown when they have.
+CurrentDay:
+  claimable: "§7Click to claim!"
+  claimed: "§7Already claimed today!"
+  lore: "§6§lToday's Rewards:"
+
+
+#Lore on the rest of the days shown to the player, rewards text from below is added to the end.
+DayTemplate:
+  lore:
+    - "§7Return each day for more rewards."
+    - " "
+    - "§6§lRewards:"
+
+
+#Lore for all of the border blocks that surround the days in the interface.
+Border:
+  lore:
+    - "§7Claim a reward for logging in each"
+    - "§7day! Special rewards at every 7"
+    - "§7days and at 28 days!"
+    - " "
+    - "§eMake sure to come back each day to"
+    - "§ekeep your streak!"
+    - ""
+    - "§4Time until next daily reward: "
+# Time is always shown at the bottom of this lore.
+
+
+#Lists the days and the rewards given when claiming each day. Text is what the player sees, command is what is sent to the console.
+#Commands can be changed to anything - must keep '[command] ' with the space at the beginning and '<player>' in place of the player name.
+Rewards:
+  Day:
+    1:
+      text:
+        - "1x Diamond"
+        - "$1000"
+      commands:
+        - "[console] give <player> diamond 1"
+        - "[console] eco give <player> 1000"
+    2:
+      text:
+        - "2x Diamond"
+        - "$2000"
+      commands:
+        - "[console] give <player> diamond 2"
+        - "[console] eco give <player> 2000"
+    3:
+      text:
+        - "3x Diamond"
+        - "$3000"
+      commands:
+        - "[console] give <player> diamond 3"
+        - "[console] eco give <player> 3000"
+    4:
+      text:
+        - "4x Diamond"
+        - "$4000"
+      commands:
+        - "[console] give <player> diamond 4"
+        - "[console] eco give <player> 4000"
+    5:
+      text:
+        - "5x Diamond"
+        - "$5000"
+      commands:
+        - "[console] give <player> diamond 5"
+        - "[console] eco give <player> 5000"
+    6:
+      text:
+        - "6x Diamond"
+        - "$6000"
+      commands:
+        - "[console] give <player> diamond 6"
+        - "[console] eco give <player> 6000"
+    7:
+      text:
+        - "10x Diamond"
+        - "$10000"
+      commands:
+        - "[console] give <player> diamond 10"
+        - "[console] eco give <player> 10000"
+    8:
+      text:
+        - "1x Diamond"
+        - "$1000"
+      commands:
+        - "[console] give <player> diamond 1"
+        - "[console] eco give <player> 1000"
+    9:
+      text:
+        - "2x Diamond"
+        - "$2000"
+      commands:
+        - "[console] give <player> diamond 2"
+        - "[console] eco give <player> 2000"
+    10:
+      text:
+        - "3x Diamond"
+        - "$3000"
+      commands:
+        - "[console] give <player> diamond 3"
+        - "[console] eco give <player> 3000"
+    11:
+      text:
+        - "4x Diamond"
+        - "$4000"
+      commands:
+        - "[console] give <player> diamond 4"
+        - "[console] eco give <player> 4000"
+        - "gfg"
+    12:
+      text:
+        - "5x Diamond"
+        - "$5000"
+      commands:
+        - "[console] give <player> diamond 5"
+        - "[console] eco give <player> 5000"
+    13:
+      text:
+        - "6x Diamond"
+        - "$6000"
+      commands:
+        - "[console] give <player> diamond 6"
+        - "[console] eco give <player> 6000"
+    14:
+      text:
+        - "10x Diamond"
+        - "$10000"
+      commands:
+        - "[console] give <player> diamond 10"
+        - "[console] eco give <player> 10000"
+    15:
+      text:
+        - "1x Diamond"
+        - "$1000"
+      commands:
+        - "[console] give <player> diamond 1"
+        - "[console] eco give <player> 1000"
+    16:
+      text:
+        - "2x Diamond"
+        - "$2000"
+      commands:
+        - "[console] give <player> diamond 2"
+        - "[console] eco give <player> 2000"
+    17:
+      text:
+        - "3x Diamond"
+        - "$3000"
+      commands:
+        - "[console] give <player> diamond 3"
+        - "[console] eco give <player> 3000"
+    18:
+      text:
+        - "4x Diamond"
+        - "$4000"
+      commands:
+        - "[console] give <player> diamond 4"
+        - "[console] eco give <player> 4000"
+        - "gfg"
+    19:
+      text:
+        - "5x Diamond"
+        - "$5000"
+      commands:
+        - "[console] give <player> diamond 5"
+        - "[console] eco give <player> 5000"
+    20:
+      text:
+        - "6x Diamond"
+        - "$6000"
+      commands:
+        - "[console] give <player> diamond 6"
+        - "[console] eco give <player> 6000"
+    21:
+      text:
+        - "10x Diamond"
+        - "$10000"
+      commands:
+        - "[console] give <player> diamond 10"
+        - "[console] eco give <player> 10000"
+    22:
+      text:
+        - "1x Diamond"
+        - "$1000"
+      commands:
+        - "[console] give <player> diamond 1"
+        - "[console] eco give <player> 1000"
+    23:
+      text:
+        - "2x Diamond"
+        - "$2000"
+      commands:
+        - "[console] give <player> diamond 2"
+        - "[console] eco give <player> 2000"
+    24:
+      text:
+        - "3x Diamond"
+        - "$3000"
+      commands:
+        - "[console] give <player> diamond 3"
+        - "[console] eco give <player> 3000"
+    25:
+      text:
+        - "4x Diamond"
+        - "$4000"
+      commands:
+        - "[console] give <player> diamond 4"
+        - "[console] eco give <player> 4000"
+        - "gfg"
+    26:
+      text:
+        - "5x Diamond"
+        - "$5000"
+      commands:
+        - "[console] give <player> diamond 5"
+        - "[console] eco give <player> 5000"
+    27:
+      text:
+        - "6x Diamond"
+        - "$6000"
+      commands:
+        - "[console] give <player> diamond 6"
+        - "[console] eco give <player> 6000"
+    28:
+      text:
+        - "50x Diamond"
+        - "$50000"
+      commands:
+        - "[console] give <player> diamond 50"
+        - "[console] eco give <player> 50000"
+
+
